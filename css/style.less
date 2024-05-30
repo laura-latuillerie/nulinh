@@ -40,26 +40,26 @@
 //BTN
 .btn-retro{
   .retro;
-  padding: 12px 20px;
+  padding: 9px 15px;
   border-radius: 6px;
   border: 1px solid @darkGrey;
   background: @lightGrey;
   border-radius: 6px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
-
+  font-size: 13px;
+  @media screen and (min-width:992px) {
+    font-size: 16px;
+  }
   &:hover{
     border: 1px solid @darkGrey;
     background: darken(@lightGrey, 5%);
   }
 }
 
-#mc_embed_signup{
-  background:#fff;
-  clear:left;
-  font-size: 14px;
-  font-family: Helvetica,Arial,sans-serif;
-  width: 600px;
+@keyframes bounce {
+  from {transform: translateY(0);}
+  to   {transform: translateY(-10px);}
 }
 
 body{
@@ -69,6 +69,9 @@ body{
   .section-title{
     max-width: 100%;
     margin: 0 auto;
+    animation-name: bright;
+    animation: bounce 1s ease infinite alternate;
+
     @media screen and (min-width:992px) {
       max-width: 80%;
     }

@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -34,7 +36,7 @@
               <a class="nav-link" href="#lyrics">Lyrics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link subscribe" href="#">Subscribe</a>
+              <a class="nav-link subscribe" href="#">Newsletter</a>
             </li>
           </ul>
         </div>
@@ -45,26 +47,25 @@
     <div id="bg">
       <img src="./media/BG.jpg" alt="">
     </div>
-    <div id="content" class="container">
-      <section id="top">
-        <img src="./media/msn.png" alt="" id="msn">
-      </section>
+    <div id="content" class="container-fluid">
+      
       <section id="music">
         <h2 class="visually-hidden">Musique, sorties, et actualité musicale de Nu Linh</h2>
         <img src="./media/music_title.png" alt="" class="section-title">
         <div id="bhc" class="container-fluid">
           <img src="./media/bhc_cd.png" alt="" class="project-cd">
           <div class="row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-5">
               <div class="d-flex flex-column justify-content-center align-items-center">
                 <img src="./media/bhc_logo.png" alt="" class="project-logo">
-                <div>
-                  <a href="#" class="btn btn-retro">Je stream</a>
-                  <a href="#" class="btn btn-retro">Lyrics</a>
+                <div class="btn-container">
+                  <a href="https://open.spotify.com/intl-fr/artist/3R0sHWu5AWsvgzjbPqovK1?si=aJONtFJQRCKAahBgLIfHHg" target="_blank" class="btn btn-retro">Spotify</a>
+                  <a href="https://music.apple.com/fr/artist/nu-linh/1080386052" target="_blank" class="btn btn-retro">Apple Music</a>
+                  <a href="#lyrics" class="btn btn-retro">Lyrics</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-8 info">
+            <div class="col-12 col-lg-7 info">
               <p class="date">SORTI LE 30 MAI 2024</p>
               <p class="project-desc">
                 <span class="text-uppercase">The Broken Hearts Club</span>, mon <span class="fw-bold">1er album</span> et <span class="fw-bold">1er volet d’une trilogie à venir.</span> 21 titres qui mettent à l’honneur le R&B et retracent le périple amoureux d’un cœur brisé, ici celui de Nilh. Entrecoupés de skits où mères, filles, <span class="fw-bold">femmes issues de la diaspora vietnamienne tissent un dialogue introspectif sur l’amour,</span> leur façon de l’aborder et de le transmettre.
@@ -75,83 +76,163 @@
         <div id="chick" class="container-fluid">
           <img src="./media/chick-and-dips_cd.png" alt="" class="project-cd">
           <div class="row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-5">
               <div class="d-flex flex-column justify-content-center align-items-center">
                 <img src="./media/chick&dipps_logo.png" alt="" class="project-logo">
-                <a href="#" class="btn btn-retro">Je stream</a>
+                <div class="btn-container">
+                  <a href="https://open.spotify.com/intl-fr/artist/3R0sHWu5AWsvgzjbPqovK1?si=aJONtFJQRCKAahBgLIfHHg" target="_blank" class="btn btn-retro">Spotify</a>
+                  <a href="https://music.apple.com/fr/artist/nu-linh/1080386052" target="_blank" class="btn btn-retro">Apple Music</a>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-lg-8 info">
+            <div class="col-12 col-lg-7 info">
               <p class="date">SORTI LE 14 février 2024</p>
               <p class="project-desc">
-                <span class="fw-bold">Qui dit Saint-Valentin, dit R&B !</span> Alors à cette occasion, Nu Linh nous livre son tout nouvel EP aussi tendre que croustillant&nbsp;: <span class="text-upppercase">Chick & Dips.</span> Côté assaisonnement, vous aurez le choix entre Sweet chili, Jerk, Avocado lime & Honey glazed… <span class="fw-bold">4 titres à la fois doux et épicés pour charmer votre date !</span> Alors, à vos fourneaux ! Comment allez vous assaisonner votre poulet pour votre Valentin(e) ?
+                <span class="fw-bold">Qui dit Saint-Valentin, dit R&B !</span> Alors à cette occasion, Nu Linh nous livre son tout nouvel EP aussi tendre que croustillant&nbsp;: <span class="text-upppercase">Chick & Dips.</span> Côté assaisonnement, vous aurez le choix entre Sweet chili, Jerk, Avocado lime & Honey glazed… <span class="fw-bold">4 titres à la fois doux et épicés pour charmer votre date !</span> Alors, à vos fourneaux ! Comment allez vous assaisonner votre poulet pour votre Valentin(e)&nbsp;?
               </p>
             </div>
           </div>
         </div>
-    </section>
-    <section id="about">
-      <h2 class="visually-hidden">À propos de Nu Linh</h2>
-      <div class="container-fluid text-center">
-        <img src="./media/about_title.png" alt="" class="section-title">
-        <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-6 order-lg-2">
-            <img src="./media/about_linh.png" alt="" class="w-100">
-          </div>
-          <div class="col-12 col-lg-6 order-lg-1">
-            <p>Originaire du Sud de la France et actuellement basée à Paris, Nu Linh puise son inspiration chez des artistes tels que Musiq Soulchild, Brandy ou encore Faith Evans. Sa musique est teintée de R&B et de son héritage culturel. Son nom d'artiste, Nu Linh, tiré de son prénom Nhu Linh, est une référence à la Nu Soul. "Nu" symbolise la renaissance et l’évolution en tant que femme et artiste, tandis que "Linh" signifie "âme" ou "esprit" en vietnamien. 
-            Témoin de la résilience de sa mère et du courage de ses parents issus de l’immigration, l’enfance de Nu Linh est empreinte de foi et de valeurs solidement ancrées. Sa musique trouve ses racines dans le restaurant familial où elle baignait dans la musique vietnamienne et chinoise. Un soir, après le service, 
-            son oncle lui fait découvrir Boyz II Men et Brian McKnight, élargissant ainsi ses horizons musicaux. 
-            Le père de Nu Linh, impliqué dans la communauté, a fortement influencé son approche artistique. Artiste autodidacte, Nu Linh s’est perfectionnée dans les techniques du son et le graphisme, révélant sa polyvalence artistique. Ses compétences englobent l'écriture, le chant, l'enregistrement, le mixage, ainsi que la création de ses propres visuels et merchandising, lui assurant la maîtrise totale de son processus créatif. 
-            </p>
-            <div class="social">
-              <a href="" target="_blank"><img src="./media/ig.png" alt=""></a>
-              <a href="" target="_blank"><img src="./media/tik.png" alt=""></a>
-              <a href=""><img src="./media/mail.png" alt=""></a>
-              <a href="" target="_blank"><img src="./media/spotify.png" alt=""></a>
-              <a href="" target="_blank"><img src="./media/apple.png" alt=""></a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
+      </section>
       
-    </section>
-    <section id="lyrics">
-
-    
-      <h2 class="visually-hidden">Broken Hearts Club Lyrics</h2>
-      <img src="./media/lyrics_title.png" alt="" class="section-title">
-    </section>
-
-  </div>    <footer>
-    <!-- FORM -->
-    <div id="mc_embed_shell">
-      <div id="mc_embed_signup">
-        <form action="https://gmail.us18.list-manage.com/subscribe/post?u=a26b55f9a98ae218d7e994bf2&amp;id=a5ac6f5ef8&amp;f_id=00eb29e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-          <div id="mc_embed_signup_scroll">
-            <div class="indicates-required">
-            <div class="mc-field-group">
-              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="Votre mail"></div>
-            <div aria-hidden="true" style="position: absolute; left: -5000px;">
-              /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-              <input type="text" name="b_a26b55f9a98ae218d7e994bf2_a5ac6f5ef8" tabindex="-1" value="">
+      <section id="about">
+        <h2 class="visually-hidden">À propos de Nu Linh</h2>
+        <div class="container text-center">
+          <img src="./media/about_title.png" alt="" class="section-title">
+          <div class="row d-flex align-items-center">
+            <div class="col-12 col-lg-6 order-lg-2">
+              <img src="./media/about_linh.png" alt="" class="w-100">
             </div>
-            <div class="optionalParent">
-              <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="S'abonner">
+            <div class="col-12 col-lg-6 order-lg-1" id="about-content">
+              <p>Originaire du Sud de la France et basée à Paris, Nu Linh s’inspire d’artistes comme Musiq Soulchild, Brandy, et Faith Evans. <span class="fw-bold">Sa musique, teintée de R&B et de son héritage culturel,</span> reflète son prénom, Nhu Linh, et la Nu Soul, où « Nu » symbolise la renaissance et « Linh » signifie « âme » en vietnamien.
+                <span class="fw-bold">Marquée par la résilience de sa mère et le courage de ses parents immigrés, son enfance, imprégnée de foi et de valeurs solides, se déroule dans le restaurant familial au son de la musique vietnamienne et chinoise.</span> Un soir, son oncle lui fait découvrir Boyz II Men et Brian McKnight, élargissant ses horizons musicaux.              
+                Influencée par son père engagé dans la communauté, Nu Linh,  <span class="fw-bold">artiste autodidacte,</span> maîtrise les techniques du son et le graphisme. <span class="fw-bold">Elle écrit, chante, enregistre, mixe, et crée ses visuels et merchandising, contrôlant ainsi tout son processus créatif.</span>             
+              </p>
+              <div class="social">
+                <a href="https://www.instagram.com/nulinh/" target="_blank"><img src="./media/ig.png" alt=""></a>
+                <a href="https://www.tiktok.com/@younglilinh" target="_blank"><img src="./media/tik.png" alt=""></a>
+                <a href="https://twitter.com/Nulinh"><img src="./media/x-twitter.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UC2OfDamt1rkwVgI6d5QgeZA"><img src="./media/yt.png" alt=""></a>
+                <a href="mailto:nulinh777@gmail.com"><img src="./media/mail.png" alt=""></a>
+                <a href="https://open.spotify.com/intl-fr/artist/3R0sHWu5AWsvgzjbPqovK1?si=aJONtFJQRCKAahBgLIfHHg" target="_blank"><img src="./media/spotify.png" alt=""></a>
+                <a href="https://music.apple.com/fr/artist/nu-linh/1080386052" target="_blank"><img src="./media/apple.png" alt=""></a>
               </div>
             </div>
           </div>
-        </form>
-      </div>
+          
+        </div>
+      </section>
+      
+      <section id="lyrics">
+        <h2 class="visually-hidden">Broken Hearts Club Lyrics</h2>
+        <img src="./media/lyrics_title.png" alt="" class="section-title">
+        <div class="carousel">
+          <div class="single-item">
+            <div class="lyrics-container"><img src="./media/lyrics/1.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/2.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/3.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/4.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/5.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/6.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/7.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/8.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/9.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/10.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/11.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/12.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/13.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/14.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/15.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/16.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/17.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/18.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/19.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/20.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/21.JPG" alt=""></div>
+            <div class="lyrics-container"><img src="./media/lyrics/22.JPG" alt=""></div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="./media/lyrics/nu_linh-broken_hearts_club-lyrics_booklet.pdf" class="btn btn-retro" download>Téléchargez le pdf</a>
+        </div>
+      </section>
+      
     </div>
-  </footer>
+    
+    <footer>
+      <!-- FORM -->
+      <div class="logo">
+        <img src="./media/nulinh_logo.png" alt="">
+      </div>
+      <p class="form-header">Abonne-toi et reçois les news de ta R&B thérapeute préférée <3</p>
+      <div id="mc_embed_shell">
+        <div id="mc_embed_signup">
+          <form action="https://gmail.us18.list-manage.com/subscribe/post?u=a26b55f9a98ae218d7e994bf2&amp;id=a5ac6f5ef8&amp;f_id=00eb29e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <div id="mc_embed_signup_scroll">
+              
+              <div class="mc-field-group">
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="Ton e-mail">
+              </div>
+              <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+              </div>
+              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                <input type="text" name="b_a26b55f9a98ae218d7e994bf2_a5ac6f5ef8" tabindex="-1" value="">
+              </div>               
+              <div class="optionalParent">
+                <div>
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-abo" value="S'abonner">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[6]='MMERGE6';ftypes[6]='address';/*
+          * Translated default messages for the $ validation plugin.
+          * Locale: FR
+          */
+          $.extend($.validator.messages, {
+            required: "Ce champ est requis.",
+            remote: "Veuillez remplir ce champ pour continuer.",
+            email: "Veuillez entrer une adresse email valide.",
+            url: "Veuillez entrer une URL valide.",
+            date: "Veuillez entrer une date valide.",
+            dateISO: "Veuillez entrer une date valide (ISO).",
+            number: "Veuillez entrer un nombre valide.",
+            digits: "Veuillez entrer (seulement) une valeur numérique.",
+            creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
+            equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
+            accept: "Veuillez entrer une valeur avec une extension valide.",
+            maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
+            minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
+            rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
+            range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
+            max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
+            min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
+          });}(jQuery));var $mcj = jQuery.noConflict(true);
+        </script>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/nulinh/" target="_blank"><img src="./media/ig_light.png" alt=""></a>
+        <a href="https://www.tiktok.com/@younglilinh" target="_blank"><img src="./media/tik_light.png" alt=""></a>
+        <a href="https://twitter.com/Nulinh"><img src="./media/x-twitter-light.png" alt=""></a>
+        <a href="https://www.youtube.com/channel/UC2OfDamt1rkwVgI6d5QgeZA"><img src="./media/yt-light.png" alt=""></a>
+        <a href="mailto:nulinh777@gmail.com"><img src="./media/mail_light.png" alt=""></a>
+        <a href="https://open.spotify.com/intl-fr/artist/3R0sHWu5AWsvgzjbPqovK1?si=aJONtFJQRCKAahBgLIfHHg" target="_blank"><img src="./media/spotify_light.png" alt=""></a>
+        <a href="https://music.apple.com/fr/artist/nu-linh/1080386052" target="_blank"><img src="./media/apple_light.png" alt=""></a>
+      </div>
+      <p class="pt-5 pb-3 credits">© 2024 - Nu Linh<br>
+        Réalisation par Laura Latuillerie
+        </p>
+    </footer>
+    
   </main>
-
   
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-  <script src="./js/form.js" ></script>
+  <script src="./js/carousel.js" ></script>
 </body>
 </html>

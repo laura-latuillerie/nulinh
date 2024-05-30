@@ -3,7 +3,78 @@ footer{
   z-index: 2;
   background: @hotPink;
   padding: 30px 0;
+  text-align: center;
+  
   @media screen and (min-width:992px) {
     padding: 50px 0;
+  }
+  
+  .logo{
+    text-align: center;
+    img{
+      max-width: 200px;
+      @media screen and (min-width:992px) {
+        max-width: 300px;
+      }
+    }
+  }
+  .social{
+    a{
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        filter: brightness(110%);
+      }
+      img{
+        width: 50px;
+      }
+    }
+  }
+  .credits{
+    color: @white;
+  }
+  
+  .form-header{
+    font-family: "Retro", sans-serif;
+    color: @white;
+    margin: 3% auto 0;
+  }
+  
+  #mc_embed_shell{
+    max-width: 90%;
+    margin: 0 auto;
+    @media screen and (min-width:992px) {
+      max-width: 600px;
+    }
+  }
+  
+  #mc_embed_signup {
+    input{
+      border: none;
+    }
+    form{
+      .optionalParent{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .col-12{
+        padding: 0;
+      }
+
+      #mc-embedded-subscribe{
+        margin: 0;
+      }
+      .btn-abo{
+        background-color: #FFCAFF;
+        border: 0;
+        text-transform: uppercase;
+        font-family: "Satoshi", sans-serif;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          background: darken(#FFCAFF, 5%);
+        }
+      }
+    }
   }
 }

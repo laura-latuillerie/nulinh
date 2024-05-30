@@ -22,23 +22,30 @@
 }
 .btn-retro {
   font-family: 'Retro', sans-serif;
-  padding: 12px 20px;
+  padding: 9px 15px;
   border: 1px solid #484848;
   background: #dbdbdb;
   border-radius: 6px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
+  font-size: 13px;
+}
+@media screen and (min-width: 992px) {
+  .btn-retro {
+    font-size: 16px;
+  }
 }
 .btn-retro:hover {
   border: 1px solid #484848;
   background: #cecece;
 }
-#mc_embed_signup {
-  background: #fff;
-  clear: left;
-  font-size: 14px;
-  font-family: Helvetica, Arial, sans-serif;
-  width: 600px;
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
 body {
   font-family: "Satoshi", sans-serif;
@@ -47,6 +54,8 @@ body {
 body .section-title {
   max-width: 100%;
   margin: 0 auto;
+  animation-name: bright;
+  animation: bounce 1s ease infinite alternate;
 }
 @media screen and (min-width: 992px) {
   body .section-title {
@@ -157,7 +166,7 @@ main #content #music {
   text-align: center;
 }
 main #content #music .row {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 @media screen and (min-width: 992px) {
@@ -179,7 +188,7 @@ main #content #music .project-cd {
 }
 @media screen and (min-width: 768px) {
   main #content #music .project-cd {
-    max-width: 80%;
+    max-width: 60%;
   }
 }
 main #content #music .project-logo {
@@ -211,22 +220,160 @@ main #content #music .info .date {
     padding-left: 20px;
   }
 }
+main #content #music .btn-container a {
+  display: inline-block;
+}
 main #content #about {
   text-align: center;
+}
+@media screen and (min-width: 992px) {
+  main #content #about #about-content {
+    padding-top: 30px;
+  }
 }
 @media screen and (min-width: 992px) {
   main #content #about p {
     text-align: start;
   }
 }
+@media screen and (min-width: 992px) {
+  main #content #about .social {
+    text-align: start;
+  }
+}
+main #content #about .social a {
+  transition: all 0.3s ease-in-out;
+}
+main #content #about .social a:hover {
+  filter: brightness(80%);
+}
+main #content #about .social a img {
+  width: 50px;
+}
+main #content #lyrics {
+  text-align: center;
+  padding: 10% 0 10%;
+}
+main #content #lyrics .carousel {
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  main #content #lyrics .carousel {
+    max-width: 900px;
+  }
+}
+main #content #lyrics .carousel .lyrics-container {
+  padding: 30px 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
+main #content #lyrics .carousel .lyrics-container img {
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  main #content #lyrics .carousel .lyrics-container img {
+    max-width: 768px;
+  }
+}
+main #content #lyrics .carousel .slick-prev,
+main #content #lyrics .carousel .slick-next {
+  transform: scale(0.7);
+  z-index: 5;
+}
+@media screen and (min-width: 992px) {
+  main #content #lyrics .carousel .slick-prev,
+  main #content #lyrics .carousel .slick-next {
+    transform: scale(1);
+  }
+}
+main #content #lyrics .carousel .slick-prev {
+  left: -10px;
+}
+main #content #lyrics .carousel .slick-next {
+  right: -10px;
+}
+main #content #lyrics .carousel .slick-next:before {
+  content: url(../media/arrow_right.svg);
+}
+main #content #lyrics .carousel .slick-prev:before {
+  content: url(../media/arrow_left.svg);
+}
+main #content #lyrics .carousel .slick-prev:before,
+main #content #lyrics .carousel .slick-next:before {
+  opacity: 1;
+}
 footer {
   position: relative;
   z-index: 2;
   background: #db1b81;
   padding: 30px 0;
+  text-align: center;
 }
 @media screen and (min-width: 992px) {
   footer {
     padding: 50px 0;
   }
+}
+footer .logo {
+  text-align: center;
+}
+footer .logo img {
+  max-width: 200px;
+}
+@media screen and (min-width: 992px) {
+  footer .logo img {
+    max-width: 300px;
+  }
+}
+footer .social a {
+  transition: all 0.3s ease-in-out;
+}
+footer .social a:hover {
+  filter: brightness(110%);
+}
+footer .social a img {
+  width: 50px;
+}
+footer .credits {
+  color: #ffffff;
+}
+footer .form-header {
+  font-family: "Retro", sans-serif;
+  color: #ffffff;
+  margin: 3% auto 0;
+}
+footer #mc_embed_shell {
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  footer #mc_embed_shell {
+    max-width: 600px;
+  }
+}
+footer #mc_embed_signup input {
+  border: none;
+}
+footer #mc_embed_signup form .optionalParent {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+footer #mc_embed_signup form .col-12 {
+  padding: 0;
+}
+footer #mc_embed_signup form #mc-embedded-subscribe {
+  margin: 0;
+}
+footer #mc_embed_signup form .btn-abo {
+  background-color: #FFCAFF;
+  border: 0;
+  text-transform: uppercase;
+  font-family: "Satoshi", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+footer #mc_embed_signup form .btn-abo:hover {
+  background: #ffb0ff;
 }

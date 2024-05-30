@@ -7,7 +7,7 @@ main{
       text-align: center;
 
       .row{
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
         @media screen and (min-width:992px) {
           margin: 20px auto;
@@ -23,7 +23,7 @@ main{
         max-width: 100%;
         margin: 0 auto;
         @media screen and (min-width:768px) {
-          max-width: 80%;
+          max-width: 60%;
         }
       }
       .project-logo{
@@ -53,14 +53,89 @@ main{
           padding-left: 20px;
         }
       }
-      
+      .btn-container{
+        a{
+          display: inline-block;
+        }
+      }
     }
 
     #about{
       text-align: center;
+      #about-content{
+        @media screen and (min-width:992px) {
+          padding-top: 30px;
+        }
+      }
       p{
         @media screen and (min-width:992px) {
           text-align: start;
+        }
+      }
+      .social{
+        @media screen and (min-width:992px) {
+          text-align: start;
+        }
+        a{
+          transition: all 0.3s ease-in-out;
+          &:hover{
+            filter: brightness(80%);
+          }
+          img{
+            width: 50px;
+          }
+        }
+      }
+    }
+
+    #lyrics{
+       text-align: center;
+       padding: 10% 0 10%;
+
+      .carousel{
+        max-width: 90%;
+          margin: 0 auto;
+          @media screen and (min-width:992px) {
+            max-width: 900px;
+          }
+        .lyrics-container{
+          padding: 30px 0;
+          max-width: 90%;
+          margin: 0 auto;
+          img{
+            max-width: 90%;
+            margin: 0 auto;
+            @media screen and (min-width:992px) {
+              max-width: 768px;
+            }
+          }  
+        }
+        .slick-prev, .slick-next{
+          transform: scale(0.7);
+          z-index:5;
+          @media screen and (min-width:992px) {
+            transform: scale(1);
+          }
+        }
+
+        .slick-prev {
+          left: -10px;
+        }
+
+        .slick-next {
+          right: -10px;
+        }
+
+        .slick-next:before{
+          content: url(../media/arrow_right.svg);
+        }
+
+        .slick-prev:before{
+          content: url(../media/arrow_left.svg);
+        }
+
+        .slick-prev:before, .slick-next:before{
+          opacity: 1;
         }
       }
     }
