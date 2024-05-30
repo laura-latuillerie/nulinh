@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Retro';
+  src: url('../fonts/retro/Retro_Gaming.woff')  format('woff'),
+  url('../fonts/retro/Retro_Gaming.woff')  format('eot'),
+  url('../fonts/retro/Retro_Gaming.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/satoshi/Satoshi-Medium.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/satoshi/Satoshi-Black.otf');
+  font-weight: bold;
+}
+
+// VARIABLES - Colors
+@hotPink: #DB1B81;
+@lightPink: #FADAEE;
+@white: #fff;
+@whiteGhost: rgba(255, 255, 255, 0.15);
+@whiteGhoster: rgba(255, 255, 255, 0.3);
+@black: #202020;
+@lightGrey: #DBDBDB;
+@darkGrey: #484848;
+
+// VARIABLES - Fonts
+.satoshi{
+  font-family : "Satoshi", sans-serif;
+}
+.retro{
+  font-family: 'Retro', sans-serif;
+}
+
+//BTN
+.btn-retro{
+  .retro;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid @darkGrey;
+  background: @lightGrey;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+
+  &:hover{
+    border: 1px solid @darkGrey;
+    background: darken(@lightGrey, 5%);
+  }
+}
+
+#mc_embed_signup{
+  background:#fff;
+  clear:left;
+  font-size: 14px;
+  font-family: Helvetica,Arial,sans-serif;
+  width: 600px;
+}
+
+body{
+  .satoshi;
+  overflow-x: hidden;
+
+  .section-title{
+    max-width: 100%;
+    margin: 0 auto;
+    @media screen and (min-width:992px) {
+      max-width: 80%;
+    }
+  }
+
+  p{
+    font-size: 16px;
+    @media screen and (min-width:992px) {
+      font-size: 20px;
+    }
+  }
+}
+
+
+@import "./header.less";
+@import "./top.less";
+@import "./main.less";
+@import "./slider.less";
+@import "./footer.less";

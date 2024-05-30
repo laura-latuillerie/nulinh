@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'Retro';
+  src: url('../fonts/retro/Retro_Gaming.woff') format('woff'), url('../fonts/retro/Retro_Gaming.woff') format('eot'), url('../fonts/retro/Retro_Gaming.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/satoshi/Satoshi-Medium.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/satoshi/Satoshi-Black.otf');
+  font-weight: bold;
+}
+.satoshi {
+  font-family: "Satoshi", sans-serif;
+}
+.retro {
+  font-family: 'Retro', sans-serif;
+}
+.btn-retro {
+  font-family: 'Retro', sans-serif;
+  padding: 12px 20px;
+  border: 1px solid #484848;
+  background: #dbdbdb;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.btn-retro:hover {
+  border: 1px solid #484848;
+  background: #cecece;
+}
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 600px;
+}
+body {
+  font-family: "Satoshi", sans-serif;
+  overflow-x: hidden;
+}
+body .section-title {
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  body .section-title {
+    max-width: 80%;
+  }
+}
+body p {
+  font-size: 16px;
+}
+@media screen and (min-width: 992px) {
+  body p {
+    font-size: 20px;
+  }
+}
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+header nav {
+  background: #db1b81 !important;
+}
+header nav .navbar-toggler {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+header nav .navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+header nav .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+header nav .nav-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+header nav .nav-link.active {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+header nav .nav-link.subscribe {
+  padding: 10px 20px!important;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+header nav .nav-link.subscribe:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+@media screen and (min-width: 992px) {
+  header nav .nav-link.subscribe {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+}
+header nav .navbar-brand img {
+  max-height: 30px;
+}
+@media screen and (min-width: 768px) {
+  header nav .navbar-brand img {
+    max-height: 50px;
+  }
+}
+#top {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#top .msn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  max-width: 300px;
+}
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: 1;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+main #content {
+  position: relative;
+  z-index: 2;
+}
+main #content #music {
+  text-align: center;
+}
+main #content #music .row {
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  main #content #music .row {
+    margin: 20px auto;
+  }
+}
+main #content #music #chick {
+  margin-top: 30px;
+}
+@media screen and (min-width: 992px) {
+  main #content #music #chick {
+    margin-top: 0;
+  }
+}
+main #content #music .project-cd {
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  main #content #music .project-cd {
+    max-width: 80%;
+  }
+}
+main #content #music .project-logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  main #content #music .project-logo {
+    max-width: 300px;
+  }
+}
+main #content #music .info {
+  margin-top: 30px;
+  text-align: center;
+}
+main #content #music .info .date {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  color: #db1b81;
+  font-family: 'Retro', sans-serif;
+}
+@media screen and (min-width: 992px) {
+  main #content #music .info {
+    margin-top: 0;
+    text-align: start;
+    padding-left: 20px;
+  }
+}
+main #content #about {
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  main #content #about p {
+    text-align: start;
+  }
+}
+footer {
+  position: relative;
+  z-index: 2;
+  background: #db1b81;
+  padding: 30px 0;
+}
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 50px 0;
+  }
+}

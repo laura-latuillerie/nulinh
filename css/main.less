@@ -1,0 +1,68 @@
+main{
+  #content{
+    position: relative;
+    z-index: 2;
+
+    #music{
+      text-align: center;
+
+      .row{
+        max-width: 900px;
+        margin: 0 auto;
+        @media screen and (min-width:992px) {
+          margin: 20px auto;
+        }
+      }
+      #chick{
+        margin-top: 30px;
+        @media screen and (min-width:992px) {
+          margin-top: 0;
+        }
+      }
+      .project-cd{
+        max-width: 100%;
+        margin: 0 auto;
+        @media screen and (min-width:768px) {
+          max-width: 80%;
+        }
+      }
+      .project-logo{
+        max-width: 200px;
+        margin-bottom: 20px;
+        @media screen and (min-width:992px) {
+          max-width: 300px;
+        }
+      }
+      .info{
+        margin-top: 30px;
+        text-align: center;
+
+        .date{
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        background: @whiteGhoster;
+        padding: 10px;
+        color: @hotPink;
+        .retro;
+        }
+        
+        @media screen and (min-width:992px) {
+          margin-top: 0;
+          text-align: start;
+          padding-left: 20px;
+        }
+      }
+      
+    }
+
+    #about{
+      text-align: center;
+      p{
+        @media screen and (min-width:992px) {
+          text-align: start;
+        }
+      }
+    }
+  }
+}
