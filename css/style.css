@@ -438,7 +438,12 @@ main #content #about .social a:hover {
   filter: brightness(80%);
 }
 main #content #about .social a img {
-  width: 50px;
+  width: 30px;
+}
+@media screen and (min-width: 768px) {
+  main #content #about .social a img {
+    width: 50px;
+  }
 }
 main #content #lyrics {
   text-align: center;
