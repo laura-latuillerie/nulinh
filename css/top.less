@@ -1,16 +1,3 @@
-#top{
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  .msn{
-    position: absolute; 
-    right: 0; 
-    bottom: 0;
-    z-index: 5;
-    max-width: 300px;
-  }
-}
-
 #bg {
   position: fixed; 
   top: -50%; 
@@ -31,3 +18,207 @@
   min-height: 50%;
 }
 
+#top{
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  padding-top: 90px;
+  @media screen and (min-width:1025px){
+    height: 100vh;
+  }
+
+  #main-img{
+    max-width: 100%;
+    margin: 0 auto; 
+    @media screen and (min-width:576px){
+      max-width: 85%;
+    }
+    @media screen and (min-width:1025px){
+      max-width: 35%;
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+  #hk-gif{
+    max-width: 120px;
+    margin: 0 auto 30px;
+    @media screen and (min-width:1025px){
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+
+  #sailor-gif{
+    position: absolute;
+    top: 150px;
+    right: 5%;
+    z-index:-1;
+    transform: rotate(20deg);
+    max-width: 25%;
+    @media screen and (min-width:576px){
+      max-width: 30%;
+    }
+    @media screen and (min-width:1025px){
+      display: none;
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+
+  #sailor-gif-big{
+    display: none;
+
+    @media screen and (min-width:1025px){
+      display: block;
+      position: absolute;
+      right: 5%;
+      top: 20%;
+      z-index: -1;
+      max-width: 450px;
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+
+  #pucca{
+    display: none;
+
+    @media screen and (min-width:1025px){
+      display: block;
+      position: absolute;
+      left: 20%;
+      bottom: 15%;
+      z-index: -1;
+      max-width: 300px;
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+
+  .desktop-icons{
+    display: none;
+    @media screen and (min-width:1025px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 2%;
+      top: 10%;
+      img{
+        max-width: 100px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  @keyframes shake {
+    5% {
+      transform: translate(7px, 7px);
+    }
+  
+    10% {
+      transform: translateY(-7px);
+    }
+  
+    15% {
+      transform: translate(-1px, 5px);
+    }
+  
+    20% {
+      transform: translate(-6px, 8px);
+    }
+  
+    25% {
+      transform: translate(-5px, -7px);
+    }
+  
+    30% {
+      transform: translate(6px, 7px);
+    }
+  
+    35% {
+      transform: translate(9px, -6px);
+    }
+  
+    40% {
+      transform: translate(-3px, 9px);
+    }
+  
+    45% {
+      transform: translate(-3px, 4px);
+    }
+  
+    50% {
+      transform: translate(-3px, 1px);
+    }
+  
+    55% {
+      transform: translate(-8px, 3px);
+    }
+  
+    60% {
+      transform: translate(7px, 3px);
+    }
+  
+    65% {
+      transform: translate(-1px);
+    }
+  
+    70% {
+      transform: translate(7px, -4px);
+    }
+  
+    75% {
+      transform: translate(-2px, -8px);
+    }
+  
+    80% {
+      transform: translateY(-9px);
+    }
+  
+    85% {
+      transform: translate(-6px, 7px);
+    }
+  
+    90% {
+      transform: translate(9px, 1px);
+    }
+  
+    95% {
+      transform: translate(-9px, 7px);
+    }
+  
+    100% {
+      transform: translateY(7px);
+    }
+  }
+  
+  #msn{
+    display: none;
+    @media screen and (min-width:1025px) {
+      display: block;
+      position: absolute; 
+      right: 30px; 
+      bottom: 30px;
+      z-index: 5;
+      max-width: 220px;
+        animation: shake 0.2s ease-in-out;
+        animation-iteration-count: 4;
+        animation-delay: 2s;
+         
+    }
+    @media screen and (min-width:1200px) {
+      max-width: 350px;      
+    }
+  }
+}
