@@ -354,6 +354,7 @@ main #content {
 }
 main #content #music {
   text-align: center;
+  padding-top: 20px;
 }
 main #content #music .row {
   max-width: 1000px;
