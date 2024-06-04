@@ -83,11 +83,57 @@ body{
       font-size: 20px;
     }
   }
-
-  cursor: url(../media/hello-kitty-meowth-pack.png), auto;
-  
 }
 
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  z-index: 99;
+  background-color: #FADAEE;
+}
+
+#loading::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 4rem;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  content: "Loading";
+  animation: emojiLoader 1.2s steps(7) infinite forwards 0.2s;
+}
+
+@keyframes emojiLoader {
+  0% {
+    content: "⌛";
+  }
+  12.5% {
+    content: "🐲";
+  }
+  25% {
+    content: "💔";
+  }
+  37.5% {
+    content: "🥡";
+  }
+  50% {
+    content: "🌹";
+  }
+  62.5% {
+    content: "🚩";
+  }
+  75% {
+    content: "🇻🇳";
+  }
+  87.5% {
+    content: "❤️‍🩹";
+  }
+}
 
 
 @import "./header.less";
