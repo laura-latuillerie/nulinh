@@ -13,10 +13,38 @@ main{
           margin: 20px auto;
         }
       }
-      #chick{
-        margin-top: 30px;
-        @media screen and (min-width:992px) {
-          margin-top: 0;
+      .carousel{
+        max-width: 90%;
+          margin: 0 auto;
+          @media screen and (min-width:992px) {
+            max-width: 900px;
+          }
+        .slick-prev, .slick-next{
+          transform: scale(0.7);
+          z-index:5;
+          @media screen and (min-width:992px) {
+            transform: scale(1);
+          }
+        }
+
+        .slick-prev {
+          left: -10px;
+        }
+
+        .slick-next {
+          right: -10px;
+        }
+
+        .slick-next:before{
+          content: url(../media/arrow_right.svg);
+        }
+
+        .slick-prev:before{
+          content: url(../media/arrow_left.svg);
+        }
+
+        .slick-prev:before, .slick-next:before{
+          opacity: 1;
         }
       }
       .project-cd{
@@ -25,8 +53,13 @@ main{
         @media screen and (min-width:768px) {
           max-width: 80%;
         }
+
         @media screen and (min-width:992px) {
           max-width: 60%;
+        }
+        &.lva{
+            max-height: 250px;
+            width: auto;
         }
       }
       .project-logo{

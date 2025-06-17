@@ -411,13 +411,41 @@ main #content #music .row {
     margin: 20px auto;
   }
 }
-main #content #music #chick {
-  margin-top: 30px;
+main #content #music .carousel {
+  max-width: 90%;
+  margin: 0 auto;
 }
 @media screen and (min-width: 992px) {
-  main #content #music #chick {
-    margin-top: 0;
+  main #content #music .carousel {
+    max-width: 900px;
   }
+}
+main #content #music .carousel .slick-prev,
+main #content #music .carousel .slick-next {
+  transform: scale(0.7);
+  z-index: 5;
+}
+@media screen and (min-width: 992px) {
+  main #content #music .carousel .slick-prev,
+  main #content #music .carousel .slick-next {
+    transform: scale(1);
+  }
+}
+main #content #music .carousel .slick-prev {
+  left: -10px;
+}
+main #content #music .carousel .slick-next {
+  right: -10px;
+}
+main #content #music .carousel .slick-next:before {
+  content: url(../media/arrow_right.svg);
+}
+main #content #music .carousel .slick-prev:before {
+  content: url(../media/arrow_left.svg);
+}
+main #content #music .carousel .slick-prev:before,
+main #content #music .carousel .slick-next:before {
+  opacity: 1;
 }
 main #content #music .project-cd {
   max-width: 100%;
@@ -432,6 +460,10 @@ main #content #music .project-cd {
   main #content #music .project-cd {
     max-width: 60%;
   }
+}
+main #content #music .project-cd.lva {
+  max-height: 250px;
+  width: auto;
 }
 main #content #music .project-logo {
   max-width: 200px;
