@@ -753,12 +753,13 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-style: normal;
   color: #ffffff;
   text-transform: uppercase;
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 }
 #section_coming .container-fluid h1 span {
   font-family: 'Condor' !important;
   font-weight: 400;
   font-style: normal;
+  font-size: 2.4em;
 }
 footer {
   background-image: url(../img/beige_bg.jpg);
