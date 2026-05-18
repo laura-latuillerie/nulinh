@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Condor';
+  src: url('../fonts/Condor-ExtendedRegular.woff2')  format('woff2'),
+  url('../fonts/Condor-ExtendedRegular.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Condor';
+  src: url('../fonts/Condor-ExtendedBold.woff2')  format('woff2'),
+  url('../fonts/Condor-ExtendedBold.woff')  format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.condor{
+  font-family: 'Condor'!important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.condor-bold{
+  font-family: 'Condor';
+  font-weight: 700;
+  font-style: normal;
+}
+
+.archivo-black {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-bold {
+  font-family: "Baskervville", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-link{
+  .condor-bold();
+}
+
+p{
+  .baskervville-regular();
+  line-height: 120%;
+}
+
+
+// VARIABLES - Colors
+@white: #fff;
+@black: #000;
+@beige: #D5BAB1;
+@lightRed: #A73D47;
+@medRed: #8D1420;
+@darkRed: #440006;
+@lightGreen: #B1C4B1;
+@darkGreen: #062A01;
+.white{
+  color: @white;
+}
+
+.medRed{
+  color: @medRed;
+}
+
+.darkRed{
+  color: @darkRed;
+}
+
+.darkGreen{
+  color: @darkGreen;
+}
+
+.bg_white{
+  background-color: @white;
+}
+
+.bg_beige{
+  background-color: @beige;
+}
+
+.bg_medRed{
+  background-color: @medRed;
+}
+
+.bg_darkRed{
+  background-color: @darkRed;
+}
+
+.gradientBlack{
+  background: #000000;
+  background: -webkit-linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background: -moz-linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+h2{
+  .condor-bold;
+  text-transform: uppercase;
+  font-size:  36px;
+  @media screen and (min-width:992px) {
+    font-size:  96px;
+  }
+}
+
+p{
+  line-height: 105%;
+}
+
+.btn{
+  font-size: 20px;
+  .archivo-black;
+  border-radius: 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  
+  @media screen and (min-width:992px) {
+    font-size:  24px;
+  }
+  &.btn-med-red{
+    .bg_medRed();
+    .white;
+    &:hover{
+      .bg_darkRed();
+      .white;
+    }
+  }
+  &.btn-beige{
+    .bg_beige();
+    .medRed();
+    &:hover{
+      .bg_white();
+      .medRed();
+    }
+  }
+}
+
+#section_photo{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/photo_groundstuff.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+  .bande{
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    img{
+      height: 35px;
+      width: auto;
+    }
+  }
+
+@import "./header.less";
+@import "./section_hero.less";
+@import "./section_music.less";
+@import "./section_dates.less";
+@import "./section_shop.less";
+@import "./section_portrait.less";
+@import "./section_contact.less";
+@import "./footer.less";

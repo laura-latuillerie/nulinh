@@ -1,0 +1,47 @@
+#section_shop{
+  background-image: url(../img/red_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  .container{
+    padding: 5em 20px;
+    .content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2{
+        .white;
+        margin-bottom: 0;
+      }
+      img{
+        max-height: 550px;
+        width: auto;
+        
+      }
+    }
+  }
+  #lampe1, #lampe2{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: auto;
+    @media screen and (min-width:992px) {
+      width: 260px;
+      height: auto;
+    }
+  }
+  #lampe1{
+    left: 0;
+    @media screen and (min-width:992px) {
+      left: 5%;
+    }
+  }
+
+  #lampe2{
+    right: 0;
+    @media screen and (min-width:992px) {
+      right: 5%;
+    }
+  }
+}

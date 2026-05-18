@@ -1,0 +1,72 @@
+#section_portrait{
+  background-image: url(../img/green_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  .container{
+    padding: 2em 20px;
+    @media screen and (min-width:992px) {
+      padding: 6em 20px;
+    }
+    .content-text{
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      @media screen and (min-width:992px) {
+        text-align: start;
+      }
+      @media screen and (min-width:1200px) {
+        max-width: 550px;
+      }
+      h2{
+        .medRed;
+        br{
+          display: none;
+          @media screen and (min-width:992px) {
+            display: inline-block;
+          }
+        }
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+  #portrait_gauche, #portrait_droit{
+    display: none;
+    position: absolute;
+    height: 500px;
+    width: auto;
+    @media screen and (min-width:992px) {
+      display: inline-block;
+    }
+    @media screen and (min-width:1200px) {
+      height: 700px;
+    }
+    @media screen and (min-width:1400px) {
+      height: 750px;
+    }
+  }
+
+  #portrait_gauche{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  #portrait_droit{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  #portrait_haut, #portrait_bas{
+    display: inline-block;
+    margin: 20px auto;
+    @media screen and (min-width:992px) {
+      display: none;
+    }
+  }
+}
