@@ -1,0 +1,7 @@
+#section_coming {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/photo_groundstuff.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
